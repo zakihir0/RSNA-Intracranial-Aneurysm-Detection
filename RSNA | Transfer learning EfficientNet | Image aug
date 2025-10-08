@@ -3,19 +3,19 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "d1430ecd",
+   "id": "f9eb7e71",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2025-10-08T11:52:22.296387Z",
-     "iopub.status.busy": "2025-10-08T11:52:22.296139Z",
-     "iopub.status.idle": "2025-10-08T11:54:19.374330Z",
-     "shell.execute_reply": "2025-10-08T11:54:19.373583Z"
+     "iopub.execute_input": "2025-10-08T12:05:03.266225Z",
+     "iopub.status.busy": "2025-10-08T12:05:03.265959Z",
+     "iopub.status.idle": "2025-10-08T12:07:11.478352Z",
+     "shell.execute_reply": "2025-10-08T12:07:11.477417Z"
     },
     "papermill": {
-     "duration": 117.093906,
-     "end_time": "2025-10-08T11:54:19.386278",
+     "duration": 128.230166,
+     "end_time": "2025-10-08T12:07:11.491426",
      "exception": false,
-     "start_time": "2025-10-08T11:52:22.292372",
+     "start_time": "2025-10-08T12:05:03.261260",
      "status": "completed"
     },
     "tags": []
@@ -25,11 +25,11 @@
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "2025-10-08 11:52:26.993545: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered\n",
+      "2025-10-08 12:05:08.475094: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered\n",
       "WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n",
-      "E0000 00:00:1759924347.208478      19 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered\n",
-      "E0000 00:00:1759924347.264285      19 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered\n",
-      "I0000 00:00:1759924359.602722      19 gpu_device.cc:2022] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 15513 MB memory:  -> device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:00:04.0, compute capability: 6.0\n",
+      "E0000 00:00:1759925108.682065      19 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered\n",
+      "E0000 00:00:1759925108.740374      19 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered\n",
+      "I0000 00:00:1759925122.707678      19 gpu_device.cc:2022] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 15513 MB memory:  -> device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:00:04.0, compute capability: 6.0\n",
       "/usr/local/lib/python3.11/dist-packages/sklearn/model_selection/_split.py:909: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=10.\n",
       "  warnings.warn(\n"
      ]
@@ -47,14 +47,14 @@
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "100%|██████████| 64/64 [00:06<00:00, 10.50it/s]\n",
-      "100%|██████████| 64/64 [00:05<00:00, 12.24it/s]\n",
-      "100%|██████████| 64/64 [00:04<00:00, 15.92it/s]\n",
-      "100%|██████████| 64/64 [00:04<00:00, 15.92it/s]\n",
-      "100%|██████████| 64/64 [00:05<00:00, 12.02it/s]\n",
-      "100%|██████████| 64/64 [00:03<00:00, 16.59it/s]\n",
-      "100%|██████████| 64/64 [00:04<00:00, 15.84it/s]\n",
-      "100%|██████████| 64/64 [00:03<00:00, 16.21it/s]\n"
+      "100%|██████████| 64/64 [00:05<00:00, 12.21it/s]\n",
+      "100%|██████████| 64/64 [00:06<00:00, 10.25it/s]\n",
+      "100%|██████████| 64/64 [00:04<00:00, 13.59it/s]\n",
+      "100%|██████████| 64/64 [00:04<00:00, 13.74it/s]\n",
+      "100%|██████████| 64/64 [00:04<00:00, 13.63it/s]\n",
+      "100%|██████████| 64/64 [00:04<00:00, 14.02it/s]\n",
+      "100%|██████████| 64/64 [00:04<00:00, 13.79it/s]\n",
+      "100%|██████████| 64/64 [00:04<00:00, 13.76it/s]\n"
      ]
     },
     {
@@ -69,10 +69,10 @@
      "output_type": "stream",
      "text": [
       "WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n",
-      "I0000 00:00:1759924425.130652      58 service.cc:148] XLA service 0x3c7733c0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:\n",
-      "I0000 00:00:1759924425.131493      58 service.cc:156]   StreamExecutor device (0): Tesla P100-PCIE-16GB, Compute Capability 6.0\n",
-      "I0000 00:00:1759924425.961590      58 cuda_dnn.cc:529] Loaded cuDNN version 90300\n",
-      "I0000 00:00:1759924432.715460      58 device_compiler.h:188] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.\n"
+      "I0000 00:00:1759925193.976779      59 service.cc:148] XLA service 0x41f7f060 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:\n",
+      "I0000 00:00:1759925193.977782      59 service.cc:156]   StreamExecutor device (0): Tesla P100-PCIE-16GB, Compute Capability 6.0\n",
+      "I0000 00:00:1759925194.897294      59 cuda_dnn.cc:529] Loaded cuDNN version 90300\n",
+      "I0000 00:00:1759925202.084312      59 device_compiler.h:188] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.\n"
      ]
     },
     {
@@ -85,7 +85,7 @@
        "  white-space: pre-wrap;\n",
        "}\n",
        "</style>\n",
-       "<small>shape: (3, 15)</small><table border=\"1\" class=\"dataframe\"><thead><tr><th>SeriesInstanceUID</th><th>Left Infraclinoid Internal Carotid Artery</th><th>Right Infraclinoid Internal Carotid Artery</th><th>Left Supraclinoid Internal Carotid Artery</th><th>Right Supraclinoid Internal Carotid Artery</th><th>Left Middle Cerebral Artery</th><th>Right Middle Cerebral Artery</th><th>Anterior Communicating Artery</th><th>Left Anterior Cerebral Artery</th><th>Right Anterior Cerebral Artery</th><th>Left Posterior Communicating Artery</th><th>Right Posterior Communicating Artery</th><th>Basilar Tip</th><th>Other Posterior Circulation</th><th>Aneurysm Present</th></tr><tr><td>str</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td></tr></thead><tbody><tr><td>&quot;1.2.826.0.1.3680043.8.498.1005…</td><td>0.60591</td><td>0.574562</td><td>0.523907</td><td>0.586355</td><td>0.458519</td><td>0.475271</td><td>0.516388</td><td>0.558213</td><td>0.480291</td><td>0.507062</td><td>0.514431</td><td>0.516353</td><td>0.535052</td><td>0.527307</td></tr><tr><td>&quot;1.2.826.0.1.3680043.8.498.1002…</td><td>0.552681</td><td>0.545627</td><td>0.527433</td><td>0.561512</td><td>0.444119</td><td>0.468935</td><td>0.539091</td><td>0.552227</td><td>0.474291</td><td>0.475603</td><td>0.483623</td><td>0.501207</td><td>0.520568</td><td>0.526059</td></tr><tr><td>&quot;1.2.826.0.1.3680043.8.498.1007…</td><td>0.558857</td><td>0.557328</td><td>0.530659</td><td>0.568982</td><td>0.447356</td><td>0.472686</td><td>0.540434</td><td>0.561814</td><td>0.477404</td><td>0.477821</td><td>0.484989</td><td>0.506073</td><td>0.52607</td><td>0.528081</td></tr></tbody></table></div>"
+       "<small>shape: (3, 15)</small><table border=\"1\" class=\"dataframe\"><thead><tr><th>SeriesInstanceUID</th><th>Left Infraclinoid Internal Carotid Artery</th><th>Right Infraclinoid Internal Carotid Artery</th><th>Left Supraclinoid Internal Carotid Artery</th><th>Right Supraclinoid Internal Carotid Artery</th><th>Left Middle Cerebral Artery</th><th>Right Middle Cerebral Artery</th><th>Anterior Communicating Artery</th><th>Left Anterior Cerebral Artery</th><th>Right Anterior Cerebral Artery</th><th>Left Posterior Communicating Artery</th><th>Right Posterior Communicating Artery</th><th>Basilar Tip</th><th>Other Posterior Circulation</th><th>Aneurysm Present</th></tr><tr><td>str</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td></tr></thead><tbody><tr><td>&quot;1.2.826.0.1.3680043.8.498.1005…</td><td>0.509794</td><td>0.492407</td><td>0.49611</td><td>0.505192</td><td>0.459732</td><td>0.482486</td><td>0.500332</td><td>0.511001</td><td>0.505813</td><td>0.498784</td><td>0.49593</td><td>0.500114</td><td>0.495667</td><td>0.507019</td></tr><tr><td>&quot;1.2.826.0.1.3680043.8.498.1007…</td><td>0.492173</td><td>0.490675</td><td>0.498116</td><td>0.486962</td><td>0.484487</td><td>0.499631</td><td>0.494481</td><td>0.520201</td><td>0.504112</td><td>0.494148</td><td>0.505342</td><td>0.484269</td><td>0.481898</td><td>0.507836</td></tr><tr><td>&quot;1.2.826.0.1.3680043.8.498.1002…</td><td>0.491734</td><td>0.490696</td><td>0.498729</td><td>0.486404</td><td>0.484709</td><td>0.499225</td><td>0.494173</td><td>0.51913</td><td>0.503195</td><td>0.494435</td><td>0.505306</td><td>0.484379</td><td>0.481561</td><td>0.50767</td></tr></tbody></table></div>"
       ],
       "text/plain": [
        "shape: (3, 15)\n",
@@ -97,18 +97,18 @@
        "│           ┆ ---       ┆ ---       ┆ ---       ┆   ┆ ---       ┆           ┆ ---       ┆          │\n",
        "│           ┆ f64       ┆ f64       ┆ f64       ┆   ┆ f64       ┆           ┆ f64       ┆          │\n",
        "╞═══════════╪═══════════╪═══════════╪═══════════╪═══╪═══════════╪═══════════╪═══════════╪══════════╡\n",
-       "│ 1.2.826.0 ┆ 0.60591   ┆ 0.574562  ┆ 0.523907  ┆ … ┆ 0.514431  ┆ 0.516353  ┆ 0.535052  ┆ 0.527307 │\n",
+       "│ 1.2.826.0 ┆ 0.509794  ┆ 0.492407  ┆ 0.49611   ┆ … ┆ 0.49593   ┆ 0.500114  ┆ 0.495667  ┆ 0.507019 │\n",
        "│ .1.368004 ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
        "│ 3.8.498.1 ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
        "│ 005…      ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
-       "│ 1.2.826.0 ┆ 0.552681  ┆ 0.545627  ┆ 0.527433  ┆ … ┆ 0.483623  ┆ 0.501207  ┆ 0.520568  ┆ 0.526059 │\n",
-       "│ .1.368004 ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
-       "│ 3.8.498.1 ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
-       "│ 002…      ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
-       "│ 1.2.826.0 ┆ 0.558857  ┆ 0.557328  ┆ 0.530659  ┆ … ┆ 0.484989  ┆ 0.506073  ┆ 0.52607   ┆ 0.528081 │\n",
+       "│ 1.2.826.0 ┆ 0.492173  ┆ 0.490675  ┆ 0.498116  ┆ … ┆ 0.505342  ┆ 0.484269  ┆ 0.481898  ┆ 0.507836 │\n",
        "│ .1.368004 ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
        "│ 3.8.498.1 ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
        "│ 007…      ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
+       "│ 1.2.826.0 ┆ 0.491734  ┆ 0.490696  ┆ 0.498729  ┆ … ┆ 0.505306  ┆ 0.484379  ┆ 0.481561  ┆ 0.50767  │\n",
+       "│ .1.368004 ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
+       "│ 3.8.498.1 ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
+       "│ 002…      ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
        "└───────────┴───────────┴───────────┴───────────┴───┴───────────┴───────────┴───────────┴──────────┘"
       ]
      },
@@ -146,6 +146,9 @@
     "import pydicom\n",
     "import kaggle_evaluation.rsna_inference_server\n",
     "\n",
+    "\n",
+    "\n",
+    "\n",
     "# ============================\n",
     "# 0) 環境/パス設定\n",
     "# ============================\n",
@@ -154,7 +157,7 @@
     "\n",
     "# モデル保存/読込パス\n",
     "MODEL_DIR_WORK = \"/kaggle/working/rsna-2xx\"\n",
-    "MODEL_DIR_INPUT = \"/kaggle/input/rsna-2xx\"\n",
+    "MODEL_DIR_INPUT = \"/kaggle/input/rsna-transfer-learning-efficientnet-image-aug/rsna-2xx\"\n",
     "MODEL_NAME = \"rsna_2_10_0.h5\"\n",
     "MODEL_PATH_WORK = os.path.join(MODEL_DIR_WORK, MODEL_NAME)\n",
     "MODEL_PATH_INPUT = os.path.join(MODEL_DIR_INPUT, MODEL_NAME)\n",
@@ -709,13 +712,13 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "f61bf8b2",
+   "id": "d10e01d2",
    "metadata": {
     "papermill": {
-     "duration": 0.011701,
-     "end_time": "2025-10-08T11:54:19.410206",
+     "duration": 0.012017,
+     "end_time": "2025-10-08T12:07:11.516239",
      "exception": false,
-     "start_time": "2025-10-08T11:54:19.398505",
+     "start_time": "2025-10-08T12:07:11.504222",
      "status": "completed"
     },
     "tags": []
@@ -762,14 +765,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 123.974635,
-   "end_time": "2025-10-08T11:54:22.651047",
+   "duration": 136.040191,
+   "end_time": "2025-10-08T12:07:15.297092",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2025-10-08T11:52:18.676412",
+   "start_time": "2025-10-08T12:04:59.256901",
    "version": "2.6.0"
   }
  },
