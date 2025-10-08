@@ -3,19 +3,19 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "27b69f7b",
+   "id": "d1430ecd",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2025-10-08T11:49:25.933318Z",
-     "iopub.status.busy": "2025-10-08T11:49:25.933006Z",
-     "iopub.status.idle": "2025-10-08T11:51:36.491094Z",
-     "shell.execute_reply": "2025-10-08T11:51:36.490254Z"
+     "iopub.execute_input": "2025-10-08T11:52:22.296387Z",
+     "iopub.status.busy": "2025-10-08T11:52:22.296139Z",
+     "iopub.status.idle": "2025-10-08T11:54:19.374330Z",
+     "shell.execute_reply": "2025-10-08T11:54:19.373583Z"
     },
     "papermill": {
-     "duration": 130.576319,
-     "end_time": "2025-10-08T11:51:36.504897",
+     "duration": 117.093906,
+     "end_time": "2025-10-08T11:54:19.386278",
      "exception": false,
-     "start_time": "2025-10-08T11:49:25.928578",
+     "start_time": "2025-10-08T11:52:22.292372",
      "status": "completed"
     },
     "tags": []
@@ -25,11 +25,11 @@
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "2025-10-08 11:49:31.331690: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered\n",
+      "2025-10-08 11:52:26.993545: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered\n",
       "WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n",
-      "E0000 00:00:1759924171.539613      20 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered\n",
-      "E0000 00:00:1759924171.601889      20 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered\n",
-      "I0000 00:00:1759924185.811901      20 gpu_device.cc:2022] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 15513 MB memory:  -> device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:00:04.0, compute capability: 6.0\n",
+      "E0000 00:00:1759924347.208478      19 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered\n",
+      "E0000 00:00:1759924347.264285      19 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered\n",
+      "I0000 00:00:1759924359.602722      19 gpu_device.cc:2022] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 15513 MB memory:  -> device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:00:04.0, compute capability: 6.0\n",
       "/usr/local/lib/python3.11/dist-packages/sklearn/model_selection/_split.py:909: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=10.\n",
       "  warnings.warn(\n"
      ]
@@ -47,14 +47,14 @@
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "100%|██████████| 64/64 [00:05<00:00, 10.89it/s]\n",
-      "100%|██████████| 64/64 [00:06<00:00, 10.30it/s]\n",
-      "100%|██████████| 64/64 [00:04<00:00, 13.42it/s]\n",
-      "100%|██████████| 64/64 [00:04<00:00, 13.64it/s]\n",
-      "100%|██████████| 64/64 [00:04<00:00, 12.91it/s]\n",
-      "100%|██████████| 64/64 [00:04<00:00, 13.31it/s]\n",
-      "100%|██████████| 64/64 [00:04<00:00, 13.28it/s]\n",
-      "100%|██████████| 64/64 [00:04<00:00, 13.45it/s]\n"
+      "100%|██████████| 64/64 [00:06<00:00, 10.50it/s]\n",
+      "100%|██████████| 64/64 [00:05<00:00, 12.24it/s]\n",
+      "100%|██████████| 64/64 [00:04<00:00, 15.92it/s]\n",
+      "100%|██████████| 64/64 [00:04<00:00, 15.92it/s]\n",
+      "100%|██████████| 64/64 [00:05<00:00, 12.02it/s]\n",
+      "100%|██████████| 64/64 [00:03<00:00, 16.59it/s]\n",
+      "100%|██████████| 64/64 [00:04<00:00, 15.84it/s]\n",
+      "100%|██████████| 64/64 [00:03<00:00, 16.21it/s]\n"
      ]
     },
     {
@@ -69,10 +69,10 @@
      "output_type": "stream",
      "text": [
       "WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n",
-      "I0000 00:00:1759924258.410565      60 service.cc:148] XLA service 0xd13be70 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:\n",
-      "I0000 00:00:1759924258.411350      60 service.cc:156]   StreamExecutor device (0): Tesla P100-PCIE-16GB, Compute Capability 6.0\n",
-      "I0000 00:00:1759924259.371810      60 cuda_dnn.cc:529] Loaded cuDNN version 90300\n",
-      "I0000 00:00:1759924266.705743      60 device_compiler.h:188] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.\n"
+      "I0000 00:00:1759924425.130652      58 service.cc:148] XLA service 0x3c7733c0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:\n",
+      "I0000 00:00:1759924425.131493      58 service.cc:156]   StreamExecutor device (0): Tesla P100-PCIE-16GB, Compute Capability 6.0\n",
+      "I0000 00:00:1759924425.961590      58 cuda_dnn.cc:529] Loaded cuDNN version 90300\n",
+      "I0000 00:00:1759924432.715460      58 device_compiler.h:188] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.\n"
      ]
     },
     {
@@ -85,7 +85,7 @@
        "  white-space: pre-wrap;\n",
        "}\n",
        "</style>\n",
-       "<small>shape: (3, 15)</small><table border=\"1\" class=\"dataframe\"><thead><tr><th>SeriesInstanceUID</th><th>Left Infraclinoid Internal Carotid Artery</th><th>Right Infraclinoid Internal Carotid Artery</th><th>Left Supraclinoid Internal Carotid Artery</th><th>Right Supraclinoid Internal Carotid Artery</th><th>Left Middle Cerebral Artery</th><th>Right Middle Cerebral Artery</th><th>Anterior Communicating Artery</th><th>Left Anterior Cerebral Artery</th><th>Right Anterior Cerebral Artery</th><th>Left Posterior Communicating Artery</th><th>Right Posterior Communicating Artery</th><th>Basilar Tip</th><th>Other Posterior Circulation</th><th>Aneurysm Present</th></tr><tr><td>str</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td></tr></thead><tbody><tr><td>&quot;1.2.826.0.1.3680043.8.498.1005…</td><td>0.510865</td><td>0.48482</td><td>0.473431</td><td>0.500079</td><td>0.498601</td><td>0.491352</td><td>0.51596</td><td>0.500733</td><td>0.507856</td><td>0.47596</td><td>0.494769</td><td>0.505201</td><td>0.510429</td><td>0.501635</td></tr><tr><td>&quot;1.2.826.0.1.3680043.8.498.1007…</td><td>0.502484</td><td>0.485351</td><td>0.495215</td><td>0.487298</td><td>0.500069</td><td>0.493133</td><td>0.518291</td><td>0.5039</td><td>0.491506</td><td>0.475511</td><td>0.487055</td><td>0.527322</td><td>0.505954</td><td>0.512091</td></tr><tr><td>&quot;1.2.826.0.1.3680043.8.498.1002…</td><td>0.502479</td><td>0.485599</td><td>0.495366</td><td>0.487835</td><td>0.499949</td><td>0.493243</td><td>0.517684</td><td>0.503998</td><td>0.491512</td><td>0.475782</td><td>0.487154</td><td>0.527124</td><td>0.505878</td><td>0.512164</td></tr></tbody></table></div>"
+       "<small>shape: (3, 15)</small><table border=\"1\" class=\"dataframe\"><thead><tr><th>SeriesInstanceUID</th><th>Left Infraclinoid Internal Carotid Artery</th><th>Right Infraclinoid Internal Carotid Artery</th><th>Left Supraclinoid Internal Carotid Artery</th><th>Right Supraclinoid Internal Carotid Artery</th><th>Left Middle Cerebral Artery</th><th>Right Middle Cerebral Artery</th><th>Anterior Communicating Artery</th><th>Left Anterior Cerebral Artery</th><th>Right Anterior Cerebral Artery</th><th>Left Posterior Communicating Artery</th><th>Right Posterior Communicating Artery</th><th>Basilar Tip</th><th>Other Posterior Circulation</th><th>Aneurysm Present</th></tr><tr><td>str</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td><td>f64</td></tr></thead><tbody><tr><td>&quot;1.2.826.0.1.3680043.8.498.1005…</td><td>0.60591</td><td>0.574562</td><td>0.523907</td><td>0.586355</td><td>0.458519</td><td>0.475271</td><td>0.516388</td><td>0.558213</td><td>0.480291</td><td>0.507062</td><td>0.514431</td><td>0.516353</td><td>0.535052</td><td>0.527307</td></tr><tr><td>&quot;1.2.826.0.1.3680043.8.498.1002…</td><td>0.552681</td><td>0.545627</td><td>0.527433</td><td>0.561512</td><td>0.444119</td><td>0.468935</td><td>0.539091</td><td>0.552227</td><td>0.474291</td><td>0.475603</td><td>0.483623</td><td>0.501207</td><td>0.520568</td><td>0.526059</td></tr><tr><td>&quot;1.2.826.0.1.3680043.8.498.1007…</td><td>0.558857</td><td>0.557328</td><td>0.530659</td><td>0.568982</td><td>0.447356</td><td>0.472686</td><td>0.540434</td><td>0.561814</td><td>0.477404</td><td>0.477821</td><td>0.484989</td><td>0.506073</td><td>0.52607</td><td>0.528081</td></tr></tbody></table></div>"
       ],
       "text/plain": [
        "shape: (3, 15)\n",
@@ -97,18 +97,18 @@
        "│           ┆ ---       ┆ ---       ┆ ---       ┆   ┆ ---       ┆           ┆ ---       ┆          │\n",
        "│           ┆ f64       ┆ f64       ┆ f64       ┆   ┆ f64       ┆           ┆ f64       ┆          │\n",
        "╞═══════════╪═══════════╪═══════════╪═══════════╪═══╪═══════════╪═══════════╪═══════════╪══════════╡\n",
-       "│ 1.2.826.0 ┆ 0.510865  ┆ 0.48482   ┆ 0.473431  ┆ … ┆ 0.494769  ┆ 0.505201  ┆ 0.510429  ┆ 0.501635 │\n",
+       "│ 1.2.826.0 ┆ 0.60591   ┆ 0.574562  ┆ 0.523907  ┆ … ┆ 0.514431  ┆ 0.516353  ┆ 0.535052  ┆ 0.527307 │\n",
        "│ .1.368004 ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
        "│ 3.8.498.1 ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
        "│ 005…      ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
-       "│ 1.2.826.0 ┆ 0.502484  ┆ 0.485351  ┆ 0.495215  ┆ … ┆ 0.487055  ┆ 0.527322  ┆ 0.505954  ┆ 0.512091 │\n",
-       "│ .1.368004 ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
-       "│ 3.8.498.1 ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
-       "│ 007…      ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
-       "│ 1.2.826.0 ┆ 0.502479  ┆ 0.485599  ┆ 0.495366  ┆ … ┆ 0.487154  ┆ 0.527124  ┆ 0.505878  ┆ 0.512164 │\n",
+       "│ 1.2.826.0 ┆ 0.552681  ┆ 0.545627  ┆ 0.527433  ┆ … ┆ 0.483623  ┆ 0.501207  ┆ 0.520568  ┆ 0.526059 │\n",
        "│ .1.368004 ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
        "│ 3.8.498.1 ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
        "│ 002…      ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
+       "│ 1.2.826.0 ┆ 0.558857  ┆ 0.557328  ┆ 0.530659  ┆ … ┆ 0.484989  ┆ 0.506073  ┆ 0.52607   ┆ 0.528081 │\n",
+       "│ .1.368004 ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
+       "│ 3.8.498.1 ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
+       "│ 007…      ┆           ┆           ┆           ┆   ┆           ┆           ┆           ┆          │\n",
        "└───────────┴───────────┴───────────┴───────────┴───┴───────────┴───────────┴───────────┴──────────┘"
       ]
      },
@@ -709,13 +709,13 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "d720ca35",
+   "id": "f61bf8b2",
    "metadata": {
     "papermill": {
-     "duration": 0.011886,
-     "end_time": "2025-10-08T11:51:36.528713",
+     "duration": 0.011701,
+     "end_time": "2025-10-08T11:54:19.410206",
      "exception": false,
-     "start_time": "2025-10-08T11:51:36.516827",
+     "start_time": "2025-10-08T11:54:19.398505",
      "status": "completed"
     },
     "tags": []
@@ -734,7 +734,7 @@
      "sourceType": "competition"
     },
     {
-     "sourceId": 266550435,
+     "sourceId": 266555486,
      "sourceType": "kernelVersion"
     }
    ],
@@ -762,14 +762,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 138.026003,
-   "end_time": "2025-10-08T11:51:40.018878",
+   "duration": 123.974635,
+   "end_time": "2025-10-08T11:54:22.651047",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2025-10-08T11:49:21.992875",
+   "start_time": "2025-10-08T11:52:18.676412",
    "version": "2.6.0"
   }
  },
